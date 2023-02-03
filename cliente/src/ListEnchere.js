@@ -17,7 +17,7 @@ export function ListEnchere(){
        const [seconds, setSeconds] = useState(0);
      
        useEffect(() => {
-         fetch("http://localhost:8080/api/enchere/listeEnchere")
+         fetch("https://tranquil-pie-production.up.railway.app/api/enchere/listeEnchere")
            .then((response) => response.json())
            .then((data) => {
             const encheres = data.map((enchere) => {
